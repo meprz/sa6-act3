@@ -1,13 +1,8 @@
 from functools import reduce
 
 
-given_num = 12345
-copy_given_num = given_num
-digits = []
+given_num = 12345678
 
-while copy_given_num > 0:
-    digits.append(copy_given_num % 10)
-    copy_given_num //= 10
+sum_of_digits = reduce(lambda x, y: int(x) + int(y), str(given_num))
 
-result = reduce(lambda x, y: x + y, digits)
-print(result)
+print(f"Number given: {given_num}\nSum of its digits: {sum_of_digits}")
