@@ -1,5 +1,5 @@
-given_str_list = ['hi!', 'hello', 'what\'s up?', 'a', 'Miguel']
+given_str_list = ['woo', 'hi!', 'hello', 'what\'s up?', 'a', 'Miguel']
 
-given_str_list.sort(key=lambda x: len(x))
+sorted_list = sorted(given_str_list, key=lambda x: (len(x), x))
 
-print(given_str_list)
+print(sorted_list)
